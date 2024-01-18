@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator Matematik Persegi</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Recta</h1>
+    <p>Welcome to Recta</p>
+    <p>
+        Recta is a web app that simplifies the calculation of the area and perimeter of a rectangle. You can use Recta to enter the length and width of a rectangle and get the results instantly.
+    </p>
+    <div class="container">
+        <div class="luas">
+            <h1>Luas Persegi</h1>
+            <img src="assets/persegi.jpeg" alt="Diagram of a square">
+            <p>Rumus Luas Persegi yaitu:</p>
+            <p>L = S x S</p>
+            <p>Dimana :</p>
+            <p>L = Luas</p>
+            <p>S = Sisi</p>
+            <form id="luas-form">
+                <label for="sisi-luas">Masukkan nilai sisi (cm)</label>
+                <input type="number" id="sisi-luas" name="sisi-luas" min="0" required>
+                <button type="submit" id="hitung-luas">Hitung</button>
+            </form>
+            <div id="luas-result"></div>
+        </div>
+        <div class="keliling">
+            <h1>Keliling Persegi</h1>
+            <img src="assets/persegi.jpeg" alt="Diagram of a square">
+            <p>Rumus Keliling Persegi yaitu:</p>
+            <p>K = 4 x S</p>
+            <p>Di mana :</p>
+            <p>K = Keliling</p>
+            <p>S = Sisi</p>
+            <form id="keliling-form">
+                <label for="sisi-keliling">Masukkan nilai sisi (cm)</label>
+                <input type="number" id="sisi-keliling" name="sisi-keliling" min="0" required>
+                <button type="submit" id="hitung-keliling">Hitung</button>
+            </form>
+            <div id="keliling-result"></div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
